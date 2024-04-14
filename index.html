@@ -3,9 +3,1069 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tata 1mg Clone Website</title>
+    <title>Document</title>
+    <style>
+        #offer{
+            background-color: black;
+            justify-content: center;
+            margin-top: -20px;
+            margin-left: -10px;
+            padding-top: 5px;
+            display: flex;
+            gap: 2px;
+        }
+        #navbar{
+            /* border: 1px solid grey; */
+            width: auto;
+            height: 60px;
+            display: flex;
+            margin-left: -10px;
+            margin-top: -15px;
+        }
+        .parts{
+            border: 1px solid green;
+            width: auto;
+            height: 60px;
+        }
+        
+        #navbar>#part1>img{
+            margin-left: 30px;
+            width: 124px;
+            height: 35px;
+            padding-top: 15px;
+        }
+        #safe{
+            background-color: orange;
+        }
+        #navbar>#part2{
+            display: flex;
+
+            margin-left: 50px;
+            margin-top: 5px;
+            gap: 30px;
+        }
+        #navbar>#part3{
+            display: flex;    
+            margin-left: auto;
+            margin-right: 20px;
+            margin-top: 10px;
+            gap: 15px;
+        }
+        #part3>.part3_options>img{
+            height: 35px;
+            width: 35px;
+            margin-top: 5px;
+            /* gap: 15px; */
+        }
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #navbar, #part2{
+                flex-wrap: wrap;
+                height: auto;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #navbar, #part2{
+                flex-wrap: wrap;
+                height: auto;
+            }
+        }
+        #search{
+            display: flex;
+            /* border: 2px solid red; */
+            height: 60px;
+            width: auto;
+        }
+        #search>.options{
+            margin-top: 15px;
+
+        }
+        #input1{
+            border: 0px;
+            height: 30px;
+            width: 260px;
+            border-radius: 5px;
+            background-color: rgb(241,244,246);
+            margin-left: 60px;
+        }
+        #input2{
+            border: 0px;
+            height: 30px;
+            width: 600px;
+            /* border-radius: 5px; */
+            background-color: rgb(241,244,246);
+            margin-left: 7px;
+        }
+        #search>.options>p{
+            margin-left: 300px;
+        }
+        #search>.options>button{
+            color: white;
+            border: 0px;
+            height: 35px;
+            width: 120px;
+            border-radius: 10px;
+            background-color: rgb(255,111,97);
+        }
+
+         /* media query for medium screen */
+         @media all and (max-width: 770px) and (min-width: 430px){
+            #search{
+                flex-wrap: wrap;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #search{
+                flex-wrap: wrap;
+            }
+        }
+        #dropmenu{
+            display: flex;
+            width: 100%;
+        }
+        select{
+            width: 200px;
+            border: 0px;
+            height: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #dropmenu{
+                flex-wrap: wrap;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #dropmenu{
+                flex-wrap: wrap;
+            }
+        }
+        #mainbox{
+            border-bottom: 2px solid black;
+            /* border: 2px solid red; */
+            height: auto;
+            width: 100%;
+        }
+        #mainbox>.daughter{
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: center;
+        }
+        /* #mainbox>.daughter>.images{
+            border: 1px solid cyan;
+        } */
+        #image1{
+            height:250px ;
+            width: 90%;
+        }
+        #image2{
+            height: 250px;
+            width: 90%;
+        }
+        h2{
+            color: grey;
+            
+        }
+        #mainbody_div{
+            background-color: rgb(246,246,246);
+        }
+        #shop_by_health{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #shop_by_health>.health_cards{
+            /* border: 2px solid green; */
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #shop_by_health>.health_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 7px;
+        }
+        #shop_by_health>.health_cards>h4{
+            text-align: center;
+        }
+        #health_chekups{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            width: 100%;
+            height: 190px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 130px;
+            width: 250px;
+            cursor: pointer;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        #health_chekups>.checkup_cards>p{
+            line-height: 0px;
+            /* font-size: large; */
+        }
+        #brands{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #brands>.brand_cards{
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #brands>.brand_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #supplements{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: auto;
+            gap: 50px;
+        }
+        #supplements>.supplement_cards{
+            height: auto;
+            width: 120px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 163px;
+            margin-top: 10px;
+            width: 115px;
+        }
+        #supplements>.supplement_cards>p{
+            font-size: smaller;
+            /* line-height: 2px; */
+            margin-left: 3px;
+        }
+        #personal_care{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #personal_care>.personalcare_cards{
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #personal_care>.personalcare_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 7px;
+        }
+
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #shop_by_health{
+                flex-wrap: wrap;
+            }
+            #health_chekups{
+                flex-wrap: wrap;
+            }
+            #brands{
+                flex-wrap: wrap;
+            }
+            #supplements{
+                flex-wrap: wrap;
+            }
+            #personal_care{
+                flex-wrap: wrap;
+            }
+            #supplements>.supplement_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>h4{
+                text-wrap: wrap;
+            }
+            #supplements>.supplement_cards{
+            height: auto;
+            width: 80px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 120px;
+            margin-top: 10px;
+            width: 90px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 100px;
+            width: 200px;
+        }
+        #brands{
+            height: auto;        
+        }
+        #health_chekups{
+            height: auto;
+        }
+        #shop_by_health{
+            height: auto;
+        }
+        #personal_care{
+            height: auto;
+        }
+    }
+
+        /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #shop_by_health{
+                flex-wrap: wrap;
+            }
+            #health_chekups{
+                flex-wrap: wrap;
+            }
+            #brands{
+                flex-wrap: wrap;
+            }
+            #supplements{
+                flex-wrap: wrap;
+            }
+            #personal_care{
+                flex-wrap: wrap;
+            }
+            #supplements>.supplement_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>h4{
+                text-wrap: wrap;
+            }
+            #supplements>.supplement_cards{
+            height: auto;
+            width: 60px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 90px;
+            margin-top: 10px;
+            width: 70px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 70px;
+            width: 150px;
+        }
+        #brands{
+            height: auto;        
+        }
+        #health_chekups{
+            height: auto;
+        }
+        #shop_by_health{
+            height: auto;
+        }
+        #personal_care{
+            height: auto;
+        }
+
+        }
+        p{
+            color: grey;
+            font-size: large;
+        }
+        #stats{
+            /* border: 2px solid purple; */
+            height: auto;
+        }
+        #stats>#part1{
+            /* border: 1px solid green; */
+            text-align: center;
+        }
+        #stats>#part2{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        #stats>#part2>.subparts>p{
+            color: black;
+            line-height: 0%;
+        }
+        #app_link{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+        #app_link>.link_parts>button{
+            height: 40px;
+            width: 100px;
+            border: 0px;
+            border-radius: 4px;
+            background-color: rgb(255,111,97);
+            color: white;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #app_link>.link_parts>input{
+            height: 40px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #mainfooter_part1{
+            display: flex;
+        }
+        #mainfooter_part2{
+            display: flex;
+        }
+        #mainfooter_part5{
+            display: flex;
+        }
+        #part3_child1{
+            display: flex;
+        }
+        #social_media{
+            display: flex;
+        }
+        #social_media>.media_logos>img{
+            height: 26px;
+            width: 26px;
+            margin-left: 5px;
+        }
+        #mainfooter_part1>.part1_child{
+            margin-left: 120px;
+        }
+        #mainfooter_part1>.part1_child>button{
+            height: 40px;
+            width: 100px;
+            border: 0px;
+            border-radius: 4px;
+            background-color: rgb(255,111,97);
+            color: white;
+            margin-top: 10px;
+        }
+        #mainfooter_part1>#part1_child>img{
+            height: 42px;
+            width: 136px;
+        }
+        li{
+            color: grey;
+            /* line-height: 0%; */
+            font-size: small;
+        }
+        #mainfooter_part5>.part5_child>img{
+            height: 47px;
+            width: 128px;
+        }
+        #mainfooter_part5>.part5_child>p{
+            font-size: smaller;
+        }
+        #mainfooter_part2>.part2_child>img{
+            height: 98px;
+            width: 98px;
+        }
+        #mainfooter_part2>.part2_child>p{
+            font-size: smaller;
+            color: grey;
+            text-align: center;
+        }
+        #mainfooter_part2>.part2_child>h2{
+            text-align: center;
+        }
+        #part3_child2>p{
+            text-align: center;
+            font-size: smaller;
+        }
+        #part3_child1{
+            justify-content: center;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 82px;
+            width: 90px;
+        }
+        .part5_child{
+            justify-content: space-between;
+        }
+        .part2_child{
+            display: flex;
+            margin-left: 50px;
+        }
+        #main_footer{
+            background-color: rgb(255,252,248);
+        }
+        .app_download{
+            display: block;
+        }
+
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            h2, h3, p{
+                text-wrap: wrap;
+            }
+            #stats>#part2{
+                flex-wrap: wrap;
+            }
+            #app_link{
+                flex-wrap: wrap;
+            }
+            #app_link>.link_parts>input{
+            height: 40px;
+            width: 150px;
+            /* margin-top: 10px;
+            margin-left: 20px; */
+        }
+        #social_media{
+            flex-wrap: wrap;
+        }
+        #mainfooter_part1,  #mainfooter_part2,  #mainfooter_part5{
+            flex-wrap: wrap;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 62px;
+            width: 70px;
+        }
+        }
+
+         /* media query for small screen */
+         @media all and (max-width: 429px) and (min-width: 0px){
+            h2, h3, p{
+                text-wrap: wrap;
+            }
+            #stats>#part2{
+                flex-wrap: wrap;
+            }
+            #app_link{
+                flex-wrap: wrap;
+            }
+            #app_link>.link_parts>input{
+            height: 40px;
+            width: 100px;
+            /* margin-top: 10px;
+            margin-left: 20px; */
+        }
+        #social_media{
+            flex-wrap: wrap;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 52px;
+            width: 60px;
+        }
+         }
+        
+    </style>
 </head>
 <body>
-
+    <div id="offer">
+        <p style="color: white;"><b>Limited Period Offer: </b>Get up to 8% off + extra 15% off on medicine & more offers.</p>
+        <p style="color: orange;"><b>Explore</b></p>
+    </div>
+    <dic id="navbar">
+        <div id="part1">
+            <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="logo">
+        </div>
+        <div id="part2">
+            <div class="navoptions"><h3 style="color: orange;">MEDICINES</h3></div>
+            <div class="navoptions">
+                <h3>LAB TESTS</h3>
+                <!-- <div id="safe" style="display: flex;">
+                    <p style="color: white;">SAFE</p>
+                </div> -->
+            </div>
+            <div class="navoptions"><h3>CONSULT DOCTORS</h3></div>
+            <div class="navoptions"><h3>CANCER CARE</h3></div>
+            <div class="navoptions"><h3>AYURVEDA</h3></div>
+            <div class="navoptions"><h3>CARE PLAN</h3></div>
+            <!-- <div class="navoptions" style="background-color: orange;"><h4 style="color: white;">SAVE MORE</h4></div> -->
+        </div>
+        <div id="part3">
+            <div class="part3_options"><p>Login</p></div>
+            <div class="part3_options"><p> | Sign Up</p></div>
+            <div class="part3_options"><p>Offers</p></div>
+            <div class="part3_options">
+                <img src="cart logo.jpeg" alt="cart logo">
+            </div>
+            <div class="part3_options"><p>Need Help?</p></div>
+        </div>
+    </dic>
+    <div id="search">
+        <div class="options">
+            <input id="input1" type="text" placeholder="Enter your location">
+        </div>
+        <div class="options">
+            <input id="input2" type="alphanumeric" placeholder="Search for Medicine and Health Products">
+        </div>
+        <div class="options">
+            <p>⚡QUICK BUY! Get 15% off on medicines*</p>
+        </div>
+        <div class="options">
+            <button>Quick Order</button>
+        </div>
+    </div>
+    <div id="dropmenu">
+        <select name="Health Resource Center" id="">
+            <option value="">All Diseases</option>
+            <option value="">All Medicines</option>
+            <option value="">Medicines by Therapeutic Class</option>
+        </select>
+        <select name="Vitamins & Nutrition" id="">
+            <ul>
+                <option value=""><li><b>Vitamins & Supplements</b></li></option>
+                <option value=""><li>MUltivitamins</li></option>
+                <option value=""><li>Vitamin D3</li></option>
+                <option value=""><li>Vitamin C</li></option>
+                <option value=""><li>Minerals</li></option>
+                <option value=""><li>Calcium</li></option>
+                <option value=""><li>Vitamin B12 & B Complex</li></option>
+                <option value=""><li>Other Vitamins</li></option>
+            </ul>
+            <ul>
+                <option value=""><li><b>Nutritional Drinks</b></li></option>
+                <option value=""><li>Adult Daily Nutrition</li></option>
+                <option value=""><li>Kids Nutrition (2-15 Yrs)</li></option>
+                <option value=""><li>Women Nutrition</li></option>
+            </ul>
+            <ul>
+                <option value=""><li><b>Global Supplements</b></li></option>
+                <option value=""><li>Now Foods</li></option>
+                <option value=""><li>Solgar</li></option>
+                <option value=""><li>Nordic Naturals</li></option>
+            </ul>
+        </select>
+        <select name="Personal Care" id="">
+            <ul>
+                <option value=""><li><b>Skin Care</b></li></option>
+                <option value=""><li>Sunscreen</li></option>
+                <option value=""><li>Cleanser</li></option>
+                <option value=""><li>Body Wash</li></option>
+                <option value=""><li>Face Cream</li></option>
+                <option value=""><li>Soaps</li></option>
+                <option value=""><li>Face Moisturizer</li></option>
+                <option value=""><li>Facewash</li></option>
+                <option value=""><li>Skin Care Wipes</li></option>
+                <option value=""><li>Talcum Powder</li></option>
+                <option value=""><li>Hair Removal Cream</li></option>
+            </ul>
+        </select>
+        <select name="Healthcare Devices" id="">
+            <ul>
+                <option value=""><li>BP Monitors</li></option>
+                <option value=""><li>Nebulizers and Vaporizers</li></option>
+                <option value=""><li>Smart Wearables</li></option>
+                <option value=""><li>Weighing Scale</li></option>
+                <option value=""><li>Thermometers</li></option>
+                <option value=""><li>Respiratory & Surgical Mask</li></option>
+                <option value=""><li>Pulse Oximeter</li></option>
+                <option value=""><li>Stethescope</li></option>
+            </ul>
+        </select>
+        <select name="Ayurveda Products" id="">
+            <ul>
+                <option value=""><li>Herbal Juice</li></option>
+                <option value=""><li>Chyawanprash</li></option>
+                <option value=""><li>Ayurvedic Immunity Boosters</li></option>
+                <option value=""><li>Unani Medicine</li></option>
+                <option value=""><li>Herbal Supplements</li></option>
+            </ul>
+        </select>
+        <select name="Diabetes" id="">
+            <ul>
+                <option value=""><li>Diabetes Monitoring Devices</li></option>
+                <option value=""><li>Sugar Free</li></option>
+                <option value=""><li>Diabetic Medicine</li></option>
+                <option value=""><li>Sugar Sunstitutes</li></option>
+                <option value=""><li>Diabetic Diet</li></option>
+            </ul>
+        </select>
+        <select name="Health Conditions" id="">
+            <option value="">Stomach Care</option>
+            <option value="">Heart Care</option>
+            <option value="">Bone, Joint & Muscle Care</option>
+            <option value="">Pain Relief</option>
+            <option value="">Eye Care</option>
+            <option value="">Ear Care</option>
+            <option value="">First Aid</option>
+            <option value="">Liver Care</option>
+            <option value="">Cold & Cough</option>
+            <option value="">Fever & Headache</option>
+        </select>
+        <select name="Homeopathy" id="">
+            <option value="">Homeopathic Care for Cold & Cough</option>
+            <option value="">Homeopathic Respiratory Care</option>
+            <option value="">Homeopathic Covid Essentials</option>
+        </select>
+        <select name="Featured" id="">
+            <option value="">Tata 1mg Health Products</option>
+            <option value="">Summer Essentials</option>
+            <option value="">Trending Now</option>
+            <option value="">New Arrival on Tata 1MG</option>
+            <option value="">Popular Combo Deals</option>
+        </select>
+    </div>
+    <div id="mainbox">
+        <div class="daughter">
+            <div class="images"><img id="image1" src="https://onemg.gumlet.io/5b81e56f-bb2d-44f9-ad91-c98df10e66e8_1704890149.jpg?w=1107&h=250&format=auto" alt=""></div>
+            <div class="images"><img id="image2" src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712845533_Range_1948x800.png" alt=""></div>
+        </div>
+        <div class="daughter">
+            <h2>Tata 1mg: India's Leading Online Pharmacy & Healthcare Platform</h2>
+        </div>
+    </div>
+    <div id="mainbody_div">
+        
+        <h2>Shop by Health concerns</h2>
+    <div id="shop_by_health">
+       <div class="health_cards">
+            <img src="https://onemg.gumlet.io/a56b26a0-30f1-4977-96f8-7acf1b3e0e02.png?format=auto" alt="">
+            <h4>Diabetes</h4>
+       </div>
+       <div class="health_cards">
+            <img src="https://onemg.gumlet.io/629aaf65-515f-4069-b730-28618f78597b.png?format=auto" alt="">
+            <h4>Heart Care</h4>
+       </div> 
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/b251c9cf-8d88-4fb8-8c3c-7b328caa9f70.png?format=auto" alt="">
+            <h4>Stomach Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/573d8a1a-edd0-46a5-a0fe-01a1c2bcc8f2.png?format=auto" alt="">
+            <h4>Liver Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/a1af8b43-2836-483d-8709-99eff1cc6f70.png?format=auto" alt="">
+            <h4>Bone, Joint & Muscle Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/96f9ed8a-ba62-426c-bd66-6762f40f3370.png?format=auto" alt="">
+            <h4>Kidney Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/730dbe50-4bdc-4fa8-9a09-93bc5d6c6f38.png?format=auto" alt="">
+            <h4>Derma Care</h4>
+        </div>
+    </div>
+    <br>
+    <h2>Full Body health checkups</h2>
+        <div id="health_chekups">
+            <div class="checkup_cards">
+                <h4>Good Health Smart Package</h4>
+                <p>₹399</p><p style="text-decoration: line-through;">₹800</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Comprehensive Gold Full Body Checkup</h4>
+                <p>₹2199</p><p style="text-decoration: line-through;">₹4398</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Good Health Silver Package</h4>
+                <p>₹699</p><p style="text-decoration: line-through;">₹1398</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Comprehensive Silver Full Body Checkup</h4>
+                <p>₹1749</p><p style="text-decoration: line-through;">₹3498</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Women Wellness Premium</h4>
+                <p>₹1899</p><p style="text-decoration: line-through;">₹3798</p>
+            </div>
+        </div>
+        <br>
+        <h2>Featured Brands</h2>
+        <div id="brands">
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900523_Optimum+Nutrition.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900537_MuscleBlaze.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900549_Dabur.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900562_Kapiva.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900583_Dr.+vaid.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900592_Accu+Chek.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900607_Morepen.png?format=auto" alt="">
+            </div>
+        </div>
+        <br>
+        <h2>Collagen | supplement of the week</h2>
+        <div id="supplements">
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/mp9qoget2jwnf7u6tjj9.jpg" alt="">
+                <h5>Swiss Beauty<br>Vegan Collagen..</h5>
+                <p>bottle of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1299</p>
+                <h4>₹1000</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/6433e3a7dfb649e8ba0d81d8a4d1491c.jpg" alt="">
+                <h5>Healthkart HK Vitals<br>Disolve with Mari..</h5>
+                <p>box of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹699</p>
+                <h4>₹449</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/3ab53077d4c44f3c9fdbc83d5d3948b0.jpg" alt="">
+                <h5>Power Gummies for<br>Jaw-Dropping Ski..</h5>
+                <p>bottle of 30.0 gummies delivered<br>by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1300</p>
+                <h4>₹975</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/e6abfe99bf324feea25a46f383cca8b4.jpg" alt="">
+                <h5>Swiss Collagen +<br>Hyaluronic Acid |..</h5>
+                <p>bottle of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1249</p>
+                <h4>₹962</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cgzh629olyrrv6mlc4zy.jpg" alt="">
+                <h5>The Body Temple<br>Marine Collagen..</h5>
+                <p>jar of 250.0 gm Powder<br>Delivered by Wed, 17<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹1999</p>
+                <h4>₹920</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/a569ab4a9eb843e9b9890f9965b92027.jpg" alt="">
+                <h5>Nature's Island<br>Hydrolysed Marine..</h5>
+                <p>jar of 250.0 gm Powder<br>Delivered by Tue, 16<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹2500</p>
+                <h4>₹1249</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/85d94e897a59427aadf99eed6ba02caa.jpg" alt="">
+                <h5>Eur Health Plant<br>based Collagen..</h5>
+                <p>jar of 200.0 gm Powder<br>Delivered by Thu, 18<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹1189</p>
+                <h4>₹583</h4>
+            </div>
+        </div>
+        <br>
+        <h2>Personal Care</h2>
+        <div id="personal_care">
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443647_skinn.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443670_hairr.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443681_sexuall.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443695_orall.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443705_elderly.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443714_baby.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443722_womenn.webp?format=auto" alt="">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and Healthcare Platform</h2>
+        <br>
+        <h3>We Bring Care to Health.</h3>
+        <p>Tata 1mg is India's leading digital healthcare platform. From doctor consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to "health" to give you a flawless healthcare experience.</p>
+        <br>
+        <h3>Tata 1mg: Your Favourite Online Pharmacy!</h3>
+        <p>Tata 1mg is India's leading online chemist with over 2 lakh medicines available at the best prices. We are your one-stop destination for other healthcare products as well, such as over the counter pharmaceuticals, healthcare devices and homeopathy and ayurveda medicines.</p>
+        <p>With Tata 1mg, you can buy medicines online and get them delivered at your doorstep anywhere in India! But, is ordering medicines online a difficult process? Not at all! Simply search for the products you want to buy, add to cart and checkout. Now all you need to do is sit back as we get your order delivered to you.</p>
+        <p>In case you need assistance, just give us a call and we will help you complete your order.</p>
+        <p>And there is more! At Tata 1mg, you can buy health products and medicines online at best discounts.</p>
+        <p>Now, isn't that easy? Why go all the way to the medicine store and wait in line, when you have Tata 1mg Pharmacy at your service.</p>
+        <br>
+        <h3>The Feathers in Our Cap</h3>
+        <p>At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <b>BML Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India Award</b> and <b>Top 50 venture in The Smart CEO-Startup50 India.</b> We have been selected as the only company from across the globe for <b>SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</b>  In 2019 alone we received three awards including the <b>BMW Simply Unstoppable Award.</b></p>
+        <br>
+        <h3>The Services We Offer</h3>
+        <p>Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.</p>
+        <p>We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.</p>
+        <p>Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+        <p>We’ve made healthcare accessible to millions by giving them quality care at affordable prices. Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+        <p>Visit our online medical store now, and avail online medicine purchase at a discount.</p>
+        <p>Stay Healthy!</p>
+    </div>
+    <hr style="width: 100%;" color="grey">
+    <br>
+    <div id="stats">
+        <div id="part1"><h2>INDIA'S LARGEST HEALTHCARE PLATFORM</h2></div>
+        <div id="part2">
+            <div class="subparts">
+                <h1>260m+</h1>
+                <p>Visitors</p>
+            </div>
+            <div class="subparts">
+                <h1>31m+</h1>
+                <p>Orders Delivered</p>
+            </div>
+            <div class="subparts">
+                <h1>1800+</h1>
+                <p>Cities</p>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 90%;" color="grey">
+    <div id="app_link">
+        <div class="link_parts"><h2>Get the link to download App</h2></div>
+        <div class="link_parts">
+            <input type="number" placeholder="Enter Phone Number">
+        </div>
+        <div class="link_parts">
+            <button>Send Link</button>
+        </div>
+    </div>
+    <div id="main_footer">
+        <div id="mainfooter_part1">
+            <div class="part1_child">
+                <h4>Know Us</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Press Coverage</li>
+                    <li>Careers</li>
+                    <li>Business Partnership</li>
+                    <li>Become a Health Partner</li>
+                    <li>Corporate Governance</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Our Policies</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Editorial Policy</li>
+                    <li>Return Policy</li>
+                    <li>IP Policy</li>
+                    <li>Grievance Redressal Policy</li>
+                    <li>Fake Jobs and Fraud Disclaimer</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Order Medicine</li>
+                    <li>Book Lab Test</li>
+                    <li>Consult a Doctor</li>
+                    <li>Ayurveda Articles</li>
+                    <li>Hindi Articles</li>
+                    <li>Care Plan</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Connect</h4>
+                <br>
+                <p>Social Links</p>
+                <div id="social_media">
+                    <div class="media_logos"><img src="facebook.png" alt=""></div>
+                    <div class="media_logos"><img src="instagram.png" alt=""></div>
+                    <div class="media_logos"><img src="twitter.png" alt=""></div>
+                    <div class="media_logos"><img src="youtube.png" alt=""></div>
+                    <div class="media_logos"><img src="linkedin.png" alt=""></div>
+                </div>
+                <p>Want daily dose of health?</p>
+                <button>SIGN UP</button>
+            </div>
+            <div class="part1_child">
+                <h4>Download App</h4>
+                <div class="app_download"><img src="google play.png" alt=""></div>
+                <div class="app_download"><img src="app store.png" alt=""></div>
+            </div>
+        </div>
+        <hr style="color: lightgray;" width="90%">
+        <br>
+        <div id="mainfooter_part2">
+            <div class="part2_child">
+                <div><img src="reliable.png" alt=""></div>
+                <div>
+                    <h2>Reliable</h2>
+                    <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+                </div>
+            </div>
+            <div class="part2_child">
+                <div><img src="secure.png" alt=""></div>
+                <div>
+                    <h2>Secure</h2>
+                    <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+                </div>
+            </div>
+            <div class="part2_child">
+                <div><img src="affordable.png" alt=""></div>
+                <div>
+                    <h2>Affordable</h2>
+                    <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+                </div>
+            </div>
+        </div>
+        <hr style="color: lightgray;" width="90%">
+        <br>
+        <div id="mainfooter_part3">
+            <div id="part3_child1">
+                <div class="part3_grandchild">
+                    <img src="footer part3 image1.png" alt="">
+                </div>
+                <div class="part3_grandchild">
+                    <img src="footer part3 image2.png" alt="">
+                </div>
+            </div>
+            <div id="part3_child2"><p>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</p></div>
+        </div>
+        <br>
+        <hr style="color: grey;">
+        <div id="mainfooter_part4">
+            <h4>Know more about Tata 1mg</h4>
+        </div>
+        <hr style="color: grey;">
+        <div id="mainfooter_part5">
+            <div class="part5_child">
+                <p>© 2024 Tata 1mg. All rights reserved. All medicines are dispensed in compliance with the Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945. We do not process requests for Schedule X and habit forming drugs.</p>
+            </div>
+            <div class="part5_child">
+                <img src="footer part5 logo.png" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
