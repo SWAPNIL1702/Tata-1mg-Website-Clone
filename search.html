@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #search{
+            display: flex;
+            border: 2px solid red;
+            height: 60px;
+            width: auto;
+        }
+        #search>.options{
+            margin-top: 15px;
+
+        }
+        #input1{
+            border: 0px;
+            height: 30px;
+            width: 260px;
+            border-radius: 5px;
+            background-color: rgb(241,244,246);
+            margin-left: 60px;
+        }
+        #input2{
+            border: 0px;
+            height: 30px;
+            width: 600px;
+            /* border-radius: 5px; */
+            background-color: rgb(241,244,246);
+            margin-left: 7px;
+        }
+        #search>.options>p{
+            margin-left: 300px;
+        }
+        #search>.options>button{
+            color: white;
+            border: 0px;
+            height: 35px;
+            width: 120px;
+            border-radius: 10px;
+            background-color: rgb(255,111,97);
+        }
+
+         /* media query for medium screen */
+         @media all and (max-width: 770px) and (min-width: 430px){
+            #search{
+                flex-wrap: wrap;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #search{
+                flex-wrap: wrap;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="search">
+        <div class="options">
+            <input id="input1" type="text" placeholder="Enter your location">
+        </div>
+        <div class="options">
+            <input id="input2" type="alphanumeric" placeholder="Search for Medicine and Health Products">
+        </div>
+        <div class="options">
+            <p>⚡QUICK BUY! Get 15% off on medicines*</p>
+        </div>
+        <div class="options">
+            <button>Quick Order</button>
+        </div>
+    </div>
+</body>
+</html>

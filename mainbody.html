@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainbody_div{
+            background-color: rgb(246,246,246);
+        }
+        #shop_by_health{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #shop_by_health>.health_cards{
+            /* border: 2px solid green; */
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #shop_by_health>.health_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 7px;
+        }
+        #shop_by_health>.health_cards>h4{
+            text-align: center;
+        }
+        #health_chekups{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            width: 100%;
+            height: 190px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 130px;
+            width: 250px;
+            cursor: pointer;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        #health_chekups>.checkup_cards>p{
+            line-height: 0px;
+            /* font-size: large; */
+        }
+        #brands{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #brands>.brand_cards{
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #brands>.brand_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #supplements{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: auto;
+            gap: 50px;
+        }
+        #supplements>.supplement_cards{
+            height: auto;
+            width: 120px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 163px;
+            margin-top: 10px;
+            width: 115px;
+        }
+        #supplements>.supplement_cards>p{
+            font-size: smaller;
+            /* line-height: 2px; */
+            margin-left: 3px;
+        }
+        #personal_care{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 220px;
+            gap: 30px;
+        }
+        #personal_care>.personalcare_cards{
+            height: 200px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #personal_care>.personalcare_cards>img{
+            height: 120px;
+            width: 120px;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 7px;
+        }
+
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #shop_by_health{
+                flex-wrap: wrap;
+            }
+            #health_chekups{
+                flex-wrap: wrap;
+            }
+            #brands{
+                flex-wrap: wrap;
+            }
+            #supplements{
+                flex-wrap: wrap;
+            }
+            #personal_care{
+                flex-wrap: wrap;
+            }
+            #supplements>.supplement_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>h4{
+                text-wrap: wrap;
+            }
+            #supplements>.supplement_cards{
+            height: auto;
+            width: 80px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 120px;
+            margin-top: 10px;
+            width: 90px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 100px;
+            width: 200px;
+        }
+        #brands{
+            height: auto;        
+        }
+        #health_chekups{
+            height: auto;
+        }
+        #shop_by_health{
+            height: auto;
+        }
+        #personal_care{
+            height: auto;
+        }
+    }
+
+        /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #shop_by_health{
+                flex-wrap: wrap;
+            }
+            #health_chekups{
+                flex-wrap: wrap;
+            }
+            #brands{
+                flex-wrap: wrap;
+            }
+            #supplements{
+                flex-wrap: wrap;
+            }
+            #personal_care{
+                flex-wrap: wrap;
+            }
+            #supplements>.supplement_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>p{
+                text-wrap: wrap;
+            }
+            #health_chekups>.checkup_cards>h4{
+                text-wrap: wrap;
+            }
+            #supplements>.supplement_cards{
+            height: auto;
+            width: 60px;
+            cursor: pointer;
+        }
+        #supplements>.supplement_cards>img{
+            height: 90px;
+            margin-top: 10px;
+            width: 70px;
+        }
+        #health_chekups>.checkup_cards{
+            height: 70px;
+            width: 150px;
+        }
+        #brands{
+            height: auto;        
+        }
+        #health_chekups{
+            height: auto;
+        }
+        #shop_by_health{
+            height: auto;
+        }
+        #personal_care{
+            height: auto;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbody_div">
+        
+        <h2>Shop by Health concerns</h2>
+    <div id="shop_by_health">
+       <div class="health_cards">
+            <img src="https://onemg.gumlet.io/a56b26a0-30f1-4977-96f8-7acf1b3e0e02.png?format=auto" alt="">
+            <h4>Diabetes</h4>
+       </div>
+       <div class="health_cards">
+            <img src="https://onemg.gumlet.io/629aaf65-515f-4069-b730-28618f78597b.png?format=auto" alt="">
+            <h4>Heart Care</h4>
+       </div> 
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/b251c9cf-8d88-4fb8-8c3c-7b328caa9f70.png?format=auto" alt="">
+            <h4>Stomach Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/573d8a1a-edd0-46a5-a0fe-01a1c2bcc8f2.png?format=auto" alt="">
+            <h4>Liver Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/a1af8b43-2836-483d-8709-99eff1cc6f70.png?format=auto" alt="">
+            <h4>Bone, Joint & Muscle Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/96f9ed8a-ba62-426c-bd66-6762f40f3370.png?format=auto" alt="">
+            <h4>Kidney Care</h4>
+        </div>
+        <div class="health_cards">
+            <img src="https://onemg.gumlet.io/730dbe50-4bdc-4fa8-9a09-93bc5d6c6f38.png?format=auto" alt="">
+            <h4>Derma Care</h4>
+        </div>
+    </div>
+    <br>
+    <h2>Full Body health checkups</h2>
+        <div id="health_chekups">
+            <div class="checkup_cards">
+                <h4>Good Health Smart Package</h4>
+                <p>₹399</p><p style="text-decoration: line-through;">₹800</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Comprehensive Gold Full Body Checkup</h4>
+                <p>₹2199</p><p style="text-decoration: line-through;">₹4398</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Good Health Silver Package</h4>
+                <p>₹699</p><p style="text-decoration: line-through;">₹1398</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Comprehensive Silver Full Body Checkup</h4>
+                <p>₹1749</p><p style="text-decoration: line-through;">₹3498</p>
+            </div>
+            <div class="checkup_cards">
+                <h4>Women Wellness Premium</h4>
+                <p>₹1899</p><p style="text-decoration: line-through;">₹3798</p>
+            </div>
+        </div>
+        <br>
+        <h2>Featured Brands</h2>
+        <div id="brands">
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900523_Optimum+Nutrition.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900537_MuscleBlaze.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900549_Dabur.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900562_Kapiva.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900583_Dr.+vaid.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900592_Accu+Chek.png?format=auto" alt="">
+            </div>
+            <div class="brand_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2024-04%2F1712900607_Morepen.png?format=auto" alt="">
+            </div>
+        </div>
+        <br>
+        <h2>Collagen | supplement of the week</h2>
+        <div id="supplements">
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/mp9qoget2jwnf7u6tjj9.jpg" alt="">
+                <h5>Swiss Beauty<br>Vegan Collagen..</h5>
+                <p>bottle of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1299</p>
+                <h4>₹1000</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/6433e3a7dfb649e8ba0d81d8a4d1491c.jpg" alt="">
+                <h5>Healthkart HK Vitals<br>Disolve with Mari..</h5>
+                <p>box of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹699</p>
+                <h4>₹449</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/3ab53077d4c44f3c9fdbc83d5d3948b0.jpg" alt="">
+                <h5>Power Gummies for<br>Jaw-Dropping Ski..</h5>
+                <p>bottle of 30.0 gummies delivered<br>by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1300</p>
+                <h4>₹975</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/e6abfe99bf324feea25a46f383cca8b4.jpg" alt="">
+                <h5>Swiss Collagen +<br>Hyaluronic Acid |..</h5>
+                <p>bottle of 30.0 tablets<br>delivered by 3pm, Today</p>
+                <p style="text-decoration: line-through;">MRP ₹1249</p>
+                <h4>₹962</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cgzh629olyrrv6mlc4zy.jpg" alt="">
+                <h5>The Body Temple<br>Marine Collagen..</h5>
+                <p>jar of 250.0 gm Powder<br>Delivered by Wed, 17<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹1999</p>
+                <h4>₹920</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/a569ab4a9eb843e9b9890f9965b92027.jpg" alt="">
+                <h5>Nature's Island<br>Hydrolysed Marine..</h5>
+                <p>jar of 250.0 gm Powder<br>Delivered by Tue, 16<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹2500</p>
+                <h4>₹1249</h4>
+            </div>
+            <div class="supplement_cards">
+                <img src="https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/85d94e897a59427aadf99eed6ba02caa.jpg" alt="">
+                <h5>Eur Health Plant<br>based Collagen..</h5>
+                <p>jar of 200.0 gm Powder<br>Delivered by Thu, 18<br>Apr</p>
+                <p style="text-decoration: line-through;">MRP ₹1189</p>
+                <h4>₹583</h4>
+            </div>
+        </div>
+        <br>
+        <h2>Personal Care</h2>
+        <div id="personal_care">
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443647_skinn.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443670_hairr.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443681_sexuall.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443695_orall.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443705_elderly.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443714_baby.webp?format=auto" alt="">
+            </div>
+            <div class="personalcare_cards">
+                <img src="https://onemg.gumlet.io/diagnostics%2F2023-11%2F1699443722_womenn.webp?format=auto" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

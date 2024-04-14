@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: grey;
+            font-size: large;
+        }
+        #stats{
+            /* border: 2px solid purple; */
+            height: auto;
+        }
+        #stats>#part1{
+            /* border: 1px solid green; */
+            text-align: center;
+        }
+        #stats>#part2{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        #stats>#part2>.subparts>p{
+            color: black;
+            line-height: 0%;
+        }
+        #app_link{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+        #app_link>.link_parts>button{
+            height: 40px;
+            width: 100px;
+            border: 0px;
+            border-radius: 4px;
+            background-color: rgb(255,111,97);
+            color: white;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #app_link>.link_parts>input{
+            height: 40px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #mainfooter_part1{
+            display: flex;
+        }
+        #mainfooter_part2{
+            display: flex;
+        }
+        #mainfooter_part5{
+            display: flex;
+        }
+        #part3_child1{
+            display: flex;
+        }
+        #social_media{
+            display: flex;
+        }
+        #social_media>.media_logos>img{
+            height: 26px;
+            width: 26px;
+            margin-left: 5px;
+        }
+        #mainfooter_part1>.part1_child{
+            margin-left: 120px;
+        }
+        #mainfooter_part1>.part1_child>button{
+            height: 40px;
+            width: 100px;
+            border: 0px;
+            border-radius: 4px;
+            background-color: rgb(255,111,97);
+            color: white;
+            margin-top: 10px;
+        }
+        #mainfooter_part1>#part1_child>img{
+            height: 42px;
+            width: 136px;
+        }
+        li{
+            color: grey;
+            /* line-height: 0%; */
+            font-size: small;
+        }
+        #mainfooter_part5>.part5_child>img{
+            height: 47px;
+            width: 128px;
+        }
+        #mainfooter_part5>.part5_child>p{
+            font-size: smaller;
+        }
+        #mainfooter_part2>.part2_child>img{
+            height: 98px;
+            width: 98px;
+        }
+        #mainfooter_part2>.part2_child>p{
+            font-size: smaller;
+            color: grey;
+            text-align: center;
+        }
+        #mainfooter_part2>.part2_child>h2{
+            text-align: center;
+        }
+        #part3_child2>p{
+            text-align: center;
+            font-size: smaller;
+        }
+        #part3_child1{
+            justify-content: center;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 82px;
+            width: 90px;
+        }
+        .part5_child{
+            justify-content: space-between;
+        }
+        .part2_child{
+            display: flex;
+            margin-left: 50px;
+        }
+        #main_footer{
+            background-color: rgb(255,252,248);
+        }
+        .app_download{
+            display: block;
+        }
+
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            h2, h3, p{
+                text-wrap: wrap;
+            }
+            #stats>#part2{
+                flex-wrap: wrap;
+            }
+            #app_link{
+                flex-wrap: wrap;
+            }
+            #app_link>.link_parts>input{
+            height: 40px;
+            width: 150px;
+            /* margin-top: 10px;
+            margin-left: 20px; */
+        }
+        #social_media{
+            flex-wrap: wrap;
+        }
+        #mainfooter_part1,  #mainfooter_part2,  #mainfooter_part5{
+            flex-wrap: wrap;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 62px;
+            width: 70px;
+        }
+        }
+
+         /* media query for small screen */
+         @media all and (max-width: 429px) and (min-width: 0px){
+            h2, h3, p{
+                text-wrap: wrap;
+            }
+            #stats>#part2{
+                flex-wrap: wrap;
+            }
+            #app_link{
+                flex-wrap: wrap;
+            }
+            #app_link>.link_parts>input{
+            height: 40px;
+            width: 100px;
+            /* margin-top: 10px;
+            margin-left: 20px; */
+        }
+        #social_media{
+            flex-wrap: wrap;
+        }
+        #part3_child1>#part3_grandchild>img{
+            height: 52px;
+            width: 60px;
+        }
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and Healthcare Platform</h2>
+        <br>
+        <h3>We Bring Care to Health.</h3>
+        <p>Tata 1mg is India's leading digital healthcare platform. From doctor consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to "health" to give you a flawless healthcare experience.</p>
+        <br>
+        <h3>Tata 1mg: Your Favourite Online Pharmacy!</h3>
+        <p>Tata 1mg is India's leading online chemist with over 2 lakh medicines available at the best prices. We are your one-stop destination for other healthcare products as well, such as over the counter pharmaceuticals, healthcare devices and homeopathy and ayurveda medicines.</p>
+        <p>With Tata 1mg, you can buy medicines online and get them delivered at your doorstep anywhere in India! But, is ordering medicines online a difficult process? Not at all! Simply search for the products you want to buy, add to cart and checkout. Now all you need to do is sit back as we get your order delivered to you.</p>
+        <p>In case you need assistance, just give us a call and we will help you complete your order.</p>
+        <p>And there is more! At Tata 1mg, you can buy health products and medicines online at best discounts.</p>
+        <p>Now, isn't that easy? Why go all the way to the medicine store and wait in line, when you have Tata 1mg Pharmacy at your service.</p>
+        <br>
+        <h3>The Feathers in Our Cap</h3>
+        <p>At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <b>BML Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India Award</b> and <b>Top 50 venture in The Smart CEO-Startup50 India.</b> We have been selected as the only company from across the globe for <b>SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</b>  In 2019 alone we received three awards including the <b>BMW Simply Unstoppable Award.</b></p>
+        <br>
+        <h3>The Services We Offer</h3>
+        <p>Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.</p>
+        <p>We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.</p>
+        <p>Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+        <p>We’ve made healthcare accessible to millions by giving them quality care at affordable prices. Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+        <p>Visit our online medical store now, and avail online medicine purchase at a discount.</p>
+        <p>Stay Healthy!</p>
+    </div>
+    <hr style="width: 100%;" color="grey">
+    <br>
+    <div id="stats">
+        <div id="part1"><h2>INDIA'S LARGEST HEALTHCARE PLATFORM</h2></div>
+        <div id="part2">
+            <div class="subparts">
+                <h1>260m+</h1>
+                <p>Visitors</p>
+            </div>
+            <div class="subparts">
+                <h1>31m+</h1>
+                <p>Orders Delivered</p>
+            </div>
+            <div class="subparts">
+                <h1>1800+</h1>
+                <p>Cities</p>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 90%;" color="grey">
+    <div id="app_link">
+        <div class="link_parts"><h2>Get the link to download App</h2></div>
+        <div class="link_parts">
+            <input type="number" placeholder="Enter Phone Number">
+        </div>
+        <div class="link_parts">
+            <button>Send Link</button>
+        </div>
+    </div>
+    <div id="main_footer">
+        <div id="mainfooter_part1">
+            <div class="part1_child">
+                <h4>Know Us</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Press Coverage</li>
+                    <li>Careers</li>
+                    <li>Business Partnership</li>
+                    <li>Become a Health Partner</li>
+                    <li>Corporate Governance</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Our Policies</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Editorial Policy</li>
+                    <li>Return Policy</li>
+                    <li>IP Policy</li>
+                    <li>Grievance Redressal Policy</li>
+                    <li>Fake Jobs and Fraud Disclaimer</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Order Medicine</li>
+                    <li>Book Lab Test</li>
+                    <li>Consult a Doctor</li>
+                    <li>Ayurveda Articles</li>
+                    <li>Hindi Articles</li>
+                    <li>Care Plan</li>
+                </ul>
+            </div>
+            <div class="part1_child">
+                <h4>Connect</h4>
+                <br>
+                <p>Social Links</p>
+                <div id="social_media">
+                    <div class="media_logos"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\facebook.png" alt=""></div>
+                    <div class="media_logos"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\instagram.png" alt=""></div>
+                    <div class="media_logos"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\twitter.png" alt=""></div>
+                    <div class="media_logos"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\youtube.png" alt=""></div>
+                    <div class="media_logos"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\linkedin.png" alt=""></div>
+                </div>
+                <p>Want daily dose of health?</p>
+                <button>SIGN UP</button>
+            </div>
+            <div class="part1_child">
+                <h4>Download App</h4>
+                <div class="app_download"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\google play.png" alt=""></div>
+                <div class="app_download"><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\app store.png" alt=""></div>
+            </div>
+        </div>
+        <hr style="color: lightgray;" width="90%">
+        <br>
+        <div id="mainfooter_part2">
+            <div class="part2_child">
+                <div><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\reliable.png" alt=""></div>
+                <div>
+                    <h2>Reliable</h2>
+                    <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+                </div>
+            </div>
+            <div class="part2_child">
+                <div><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\secure.png" alt=""></div>
+                <div>
+                    <h2>Secure</h2>
+                    <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+                </div>
+            </div>
+            <div class="part2_child">
+                <div><img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\affordable.png" alt=""></div>
+                <div>
+                    <h2>Affordable</h2>
+                    <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+                </div>
+            </div>
+        </div>
+        <hr style="color: lightgray;" width="90%">
+        <br>
+        <div id="mainfooter_part3">
+            <div id="part3_child1">
+                <div class="part3_grandchild">
+                    <img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\footer part3 image1.png" alt="">
+                </div>
+                <div class="part3_grandchild">
+                    <img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\footer part3 image2.png" alt="">
+                </div>
+            </div>
+            <div id="part3_child2"><p>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</p></div>
+        </div>
+        <br>
+        <hr style="color: grey;">
+        <div id="mainfooter_part4">
+            <h4>Know more about Tata 1mg</h4>
+        </div>
+        <hr style="color: grey;">
+        <div id="mainfooter_part5">
+            <div class="part5_child">
+                <p>© 2024 Tata 1mg. All rights reserved. All medicines are dispensed in compliance with the Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945. We do not process requests for Schedule X and habit forming drugs.</p>
+            </div>
+            <div class="part5_child">
+                <img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\footer part5 logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

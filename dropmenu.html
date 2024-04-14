@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dropmenu{
+            display: flex;
+            width: 100%;
+        }
+        select{
+            width: 200px;
+            border: 0px;
+            height: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #dropmenu{
+                flex-wrap: wrap;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #dropmenu{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dropmenu">
+        <select name="Health Resource Center" id="">
+            <option value="">All Diseases</option>
+            <option value="">All Medicines</option>
+            <option value="">Medicines by Therapeutic Class</option>
+        </select>
+        <select name="Vitamins & Nutrition" id="">
+            <ul>
+                <option value=""><li><b>Vitamins & Supplements</b></li></option>
+                <option value=""><li>MUltivitamins</li></option>
+                <option value=""><li>Vitamin D3</li></option>
+                <option value=""><li>Vitamin C</li></option>
+                <option value=""><li>Minerals</li></option>
+                <option value=""><li>Calcium</li></option>
+                <option value=""><li>Vitamin B12 & B Complex</li></option>
+                <option value=""><li>Other Vitamins</li></option>
+            </ul>
+            <ul>
+                <option value=""><li><b>Nutritional Drinks</b></li></option>
+                <option value=""><li>Adult Daily Nutrition</li></option>
+                <option value=""><li>Kids Nutrition (2-15 Yrs)</li></option>
+                <option value=""><li>Women Nutrition</li></option>
+            </ul>
+            <ul>
+                <option value=""><li><b>Global Supplements</b></li></option>
+                <option value=""><li>Now Foods</li></option>
+                <option value=""><li>Solgar</li></option>
+                <option value=""><li>Nordic Naturals</li></option>
+            </ul>
+        </select>
+        <select name="Personal Care" id="">
+            <ul>
+                <option value=""><li><b>Skin Care</b></li></option>
+                <option value=""><li>Sunscreen</li></option>
+                <option value=""><li>Cleanser</li></option>
+                <option value=""><li>Body Wash</li></option>
+                <option value=""><li>Face Cream</li></option>
+                <option value=""><li>Soaps</li></option>
+                <option value=""><li>Face Moisturizer</li></option>
+                <option value=""><li>Facewash</li></option>
+                <option value=""><li>Skin Care Wipes</li></option>
+                <option value=""><li>Talcum Powder</li></option>
+                <option value=""><li>Hair Removal Cream</li></option>
+            </ul>
+        </select>
+        <select name="Healthcare Devices" id="">
+            <ul>
+                <option value=""><li>BP Monitors</li></option>
+                <option value=""><li>Nebulizers and Vaporizers</li></option>
+                <option value=""><li>Smart Wearables</li></option>
+                <option value=""><li>Weighing Scale</li></option>
+                <option value=""><li>Thermometers</li></option>
+                <option value=""><li>Respiratory & Surgical Mask</li></option>
+                <option value=""><li>Pulse Oximeter</li></option>
+                <option value=""><li>Stethescope</li></option>
+            </ul>
+        </select>
+        <select name="Ayurveda Products" id="">
+            <ul>
+                <option value=""><li>Herbal Juice</li></option>
+                <option value=""><li>Chyawanprash</li></option>
+                <option value=""><li>Ayurvedic Immunity Boosters</li></option>
+                <option value=""><li>Unani Medicine</li></option>
+                <option value=""><li>Herbal Supplements</li></option>
+            </ul>
+        </select>
+        <select name="Diabetes" id="">
+            <ul>
+                <option value=""><li>Diabetes Monitoring Devices</li></option>
+                <option value=""><li>Sugar Free</li></option>
+                <option value=""><li>Diabetic Medicine</li></option>
+                <option value=""><li>Sugar Sunstitutes</li></option>
+                <option value=""><li>Diabetic Diet</li></option>
+            </ul>
+        </select>
+        <select name="Health Conditions" id="">
+            <option value="">Stomach Care</option>
+            <option value="">Heart Care</option>
+            <option value="">Bone, Joint & Muscle Care</option>
+            <option value="">Pain Relief</option>
+            <option value="">Eye Care</option>
+            <option value="">Ear Care</option>
+            <option value="">First Aid</option>
+            <option value="">Liver Care</option>
+            <option value="">Cold & Cough</option>
+            <option value="">Fever & Headache</option>
+        </select>
+        <select name="Homeopathy" id="">
+            <option value="">Homeopathic Care for Cold & Cough</option>
+            <option value="">Homeopathic Respiratory Care</option>
+            <option value="">Homeopathic Covid Essentials</option>
+        </select>
+        <select name="Featured" id="">
+            <option value="">Tata 1mg Health Products</option>
+            <option value="">Summer Essentials</option>
+            <option value="">Trending Now</option>
+            <option value="">New Arrival on Tata 1MG</option>
+            <option value="">Popular Combo Deals</option>
+        </select>
+    </div>
+    
+</body>
+</html>

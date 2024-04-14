@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            border: 1px solid grey;
+            width: auto;
+            height: 60px;
+            display: flex;
+            margin-left: -10px;
+            margin-top: -15px;
+        }
+        .parts{
+            border: 1px solid green;
+            width: auto;
+            height: 60px;
+        }
+        
+        #navbar>#part1>img{
+            margin-left: 30px;
+            width: 124px;
+            height: 35px;
+            padding-top: 15px;
+        }
+        #safe{
+            background-color: orange;
+        }
+        #navbar>#part2{
+            display: flex;
+
+            margin-left: 50px;
+            margin-top: 5px;
+            gap: 30px;
+        }
+        #navbar>#part3{
+            display: flex;    
+            margin-left: auto;
+            margin-right: 20px;
+            margin-top: 10px;
+            gap: 15px;
+        }
+        #part3>.part3_options>img{
+            height: 35px;
+            width: 35px;
+            margin-top: 5px;
+            /* gap: 15px; */
+        }
+        /* media query for medium screen */
+        @media all and (max-width: 770px) and (min-width: 430px){
+            #navbar, #part2{
+                flex-wrap: wrap;
+                height: auto;
+            }
+         }
+
+         /* media query for small screen */
+        @media all and (max-width: 429px) and (min-width: 0px){
+            #navbar, #part2{
+                flex-wrap: wrap;
+                height: auto;
+            }
+        }
+        /* #navbar>#part2>.navoptions>#safe{
+            border-radius: 3px;
+            margin-top: 15px;
+            background-color: orange;
+            height: 15px;
+            width: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <dic id="navbar">
+        <div id="part1">
+            <img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\tata_1mg_logo.svg" alt="logo">
+        </div>
+        <div id="part2">
+            <div class="navoptions"><h3 style="color: orange;">MEDICINES</h3></div>
+            <div class="navoptions">
+                <h3>LAB TESTS</h3>
+                <!-- <div id="safe" style="display: flex;">
+                    <p style="color: white;">SAFE</p>
+                </div> -->
+            </div>
+            <div class="navoptions"><h3>CONSULT DOCTORS</h3></div>
+            <div class="navoptions"><h3>CANCER CARE</h3></div>
+            <div class="navoptions"><h3>AYURVEDA</h3></div>
+            <div class="navoptions"><h3>CARE PLAN</h3></div>
+            <!-- <div class="navoptions" style="background-color: orange;"><h4 style="color: white;">SAVE MORE</h4></div> -->
+        </div>
+        <div id="part3">
+            <div class="part3_options"><p>Login</p></div>
+            <div class="part3_options"><p> | Sign Up</p></div>
+            <div class="part3_options"><p>Offers</p></div>
+            <div class="part3_options">
+                <img src="C:\Users\mso10\OneDrive\Desktop\tata 1mg clone\cart logo.jpeg" alt="cart logo">
+            </div>
+            <div class="part3_options"><p>Need Help?</p></div>
+        </div>
+    </dic>
+</body>
+</html>
